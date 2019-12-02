@@ -1,0 +1,96 @@
+@import url(http://allfont.ru/allfont.css?fonts=raleway-regular);
+@import url(http://allfont.ru/allfont.css?fonts=fjalla);
+@media screen and (min-width: 980px) /* Desktop */ {
+    header{
+        width: 100%;
+        min-height: 130vh;
+        background: url(img/backgroundHeader.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+    }
+}
+
+body{
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+#side-bar{
+    min-height: 130vh;
+    width: 100%;
+    float: left;
+}
+
+#main-header-content{
+    width: 100%;
+    min-height: 130vh;
+    float: left;
+    
+}
+
+header{
+        width: 100%;
+        min-height: 130vh;
+        background: url(img/backgroundHeader.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+}
+
+#nav{
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+#nav .active{
+    transition: 0;
+    border-bottom: 2px solid white;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    font-family: 'Raleway Regular', arial;
+    border-bottom: 2px solid transparent;
+}
+
+#nav a:hover{
+    opacity: 1;
+    transition: 0.5s;
+    border-bottom: 2px solid white;
+}
+
+
+.logo{
+    float: left;
+}
+
+.space{
+    float: left;
+    width: 100%;
+    height: 1px;
+}
+
+#top{
+    margin-top: 5%;
+}
+#main-header-text{
+    margin-top: 20%;
+}
+
+.text-header{
+    float: left;
+    
+}
+
+.text-header p{
+    font-family: 'FjallaOne', arial;
+    font-size: 2vw;
+    color: white;
+}
