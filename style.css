@@ -48,6 +48,7 @@ header{
 #nav .active{
     transition: 0;
     border-bottom: 2px solid white;
+    opacity: 1;
 }
 
 #nav a{
@@ -58,6 +59,7 @@ header{
     padding-bottom: 5%;
     font-family: 'Raleway Regular', arial;
     border-bottom: 2px solid transparent;
+    opacity: 0.7;
 }
 
 #nav a:hover{
@@ -94,3 +96,49 @@ header{
     font-size: 2vw;
     color: white;
 }
+
+.side-bar-sub-header{
+    float: left;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.main-sub-header{
+    float: left;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.main-sub-header h4{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.5vw;
+}
+
+.icon-list{
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 5%;
+    float: left;
+}
+
+.icon{
+    float: left;
+    text-align: center;
+}
+
+.icon h6{
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.icon p{
+    font-size: 0.8vw;
+    font-weight: bold;
+    font-family: 'Raleway Regular', arial;
+    margin-top: 10%;
+}
+
