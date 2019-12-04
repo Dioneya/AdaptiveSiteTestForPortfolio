@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center center;
+        position: static;
     }
 }
 
@@ -107,9 +108,18 @@ header{
     float: left;
     width: 100%;
     min-height: 60vh;
+    
 }
 
 .main-sub-header h4{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.5vw;
+}
+
+#main-content-slider h4{
     float: left;
     width: 100%;
     text-align: center;
@@ -142,3 +152,78 @@ header{
     margin-top: 10%;
 }
 
+#sub-header{
+    box-shadow:  2px 8px 20px 0px rgba(50, 50, 50, 1);
+    width: 100%;
+}
+
+#side-bar-content{
+    min-height: 200vh;
+    width: 100%;
+    float: left;
+}
+
+#main-content-slider{
+    min-height: 200vh;
+    float: left;
+    width: 100%;
+}
+
+#slider-content{
+    float: left;
+    width: 100%;
+    min-height: 200vh;
+    background-color:#ebebeb;
+}
+
+#main-about{
+    min-height: 200vh;
+    width: 100%;
+    float: left;
+}
+
+#lineOfInfo{
+    margin-top: 10%;
+}
+
+#lineOfInfo img{
+    float: left;
+}
+
+#lineOfInfo p{
+    float: left;
+    font-size: 0.8vw;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Raleway Regular', arial;
+}
+
+.h4-head{
+    float: left;
+    width: 100%;
+    margin-top: 10%;
+    font-weight: 500;
+    font-size: 1.4vw;
+    padding-bottom: 10%;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 2%;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 10%;
+    float: left;
+}
+
+.info{
+    float: left;
+    width: 100%;
+}
+
+.link a:hover{
+    text-decoration: none;
+    color: black;
+}
