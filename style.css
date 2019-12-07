@@ -1,5 +1,6 @@
 @import url(http://allfont.ru/allfont.css?fonts=raleway-regular);
 @import url(http://allfont.ru/allfont.css?fonts=fjalla);
+@import url(http://allfont.ru/allfont.css?fonts=open-sans-bold);
 @media screen and (min-width: 980px) /* Desktop */ {
     header{
         width: 100%;
@@ -158,7 +159,7 @@ header{
 }
 
 #side-bar-content{
-    min-height: 200vh;
+    min-height: 100vh;
     width: 100%;
     float: left;
 }
@@ -177,17 +178,21 @@ header{
 }
 
 #main-about{
-    min-height: 200vh;
+    min-height: 100vh;
     width: 100%;
     float: left;
 }
 
 #lineOfInfo{
     margin-top: 10%;
+    margin-bottom: 10%;
+    float: left;
+    min-height: 10vh;
 }
 
 #lineOfInfo img{
     float: left;
+    width: 100%;
 }
 
 #lineOfInfo p{
@@ -198,6 +203,10 @@ header{
     font-family: 'Raleway Regular', arial;
 }
 
+#lineOfInfo iframe{
+    height: 35vh;
+}
+
 .h4-head{
     float: left;
     width: 100%;
@@ -205,6 +214,7 @@ header{
     font-weight: 500;
     font-size: 1.4vw;
     padding-bottom: 10%;
+    font-family: 'Open Sans Bold', arial;
 }
 
 .link a{
@@ -218,6 +228,10 @@ header{
     float: left;
 }
 
+.right a{
+    float: right;
+}
+
 .info{
     float: left;
     width: 100%;
@@ -226,4 +240,135 @@ header{
 .link a:hover{
     text-decoration: none;
     color: black;
+}
+
+.nav-slider{
+    width: 100%;
+    float: left;
+    align-content: center;
+}
+
+.page{
+    float: left;
+    margin-right:2%;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    font-size: 0.8vw;
+    font-family: 'Raleway Regular', arial;
+}
+
+.active{
+    transition: 0;
+    border-bottom: 2px solid black;
+    font-family: 'Raleway Regular', arial;
+    opacity: 1;
+}
+
+.image-box{
+    width: 100%;
+    min-height:  40vh;
+    background: gray;
+}
+
+.slide{
+    float: left;
+    position: absolute;
+    opacity: 0;
+	z-index: 1;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+#slides{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+
+.slide:nth-of-type(2) .image-box{
+    background: green;
+}
+
+#contact-me{
+    float: left;
+    width: 100%;
+background: rgb(4,0,103);
+background: -moz-linear-gradient(126deg, rgba(4,0,103,1) 0%, rgba(255,56,168,1) 100%);
+background: -webkit-linear-gradient(126deg, rgba(4,0,103,1) 0%, rgba(255,56,168,1) 100%);
+background: linear-gradient(126deg, rgba(4,0,103,1) 0%, rgba(255,56,168,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040067",endColorstr="#ff38a8",GradientType=1);
+}
+
+.contact-me-side{
+    width: 100%;
+    min-height: 150vh;
+    float: left;
+}
+
+#main-contact{
+    width: 100%;
+    min-height: 150vh;
+    float: left;
+    
+}
+
+#main-contact h3{
+    color: white;
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 20%;
+    font-weight: 525;
+    font-family: 'Open Sans Bold', arial;
+}
+
+#main-contact p{
+    margin-top: 10%;
+    font-family: 'Raleway Regular', arial;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+}
+
+label{
+    color: white;
+    font-size: 0.8vw;
+    font-family: 'Raleway Regular', arial;
+}
+
+#contact-me form{
+    margin-top: 10%;
+}
+
+.input-line{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.firstName{
+    float: left;
+    width: 100%;
+}
+
+.email{
+    margin-top: 5%;
+}
+.buttonSend{
+    margin-top: 5%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+.sendMessage{
+    color: white;
+    font-size: 1vw;
+    opacity: 0.8;
+    background-color: transparent;
+    border: 0;
 }

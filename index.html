@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -68,13 +70,33 @@
         <div id="side-bar-content" class="col-2"></div>
         <div id="main-content-slider" class="col-8" >
             <h4 class="col-12">LASTED PROJECT</h4>
+            <div class="slider-nav">
+                <div class="col-3 space"></div>
+                <div class="col-6 nav-slider">
+                    <button id="page-1" class="page active">All Project</button>
+                    <button id="page-2" class="page">All Project</button>
+                    <button id="page-3" class="page">All Project</button>
+                    <button id="page-4" class="page">All Project</button>
+                    <button id="page-5" class="page">All Project</button>
+                </div>
+                <div class="col-3 space"></div>
+            </div>
+            <div id="slides" class="col-12">
+                <div class="slide showing col-12">
+                <div class="col-3 image-box"></div>
+                </div>
+                <div class="slide col-12">
+                <div class="col-3 image-box"></div>
+                </div>
+            </div>
         </div>
-        <div id="side-bar-content" class="col-2"></div>    
+        <div id="side-bar-content" class="col-2"></div>  
+        
     </div>
     <div id="about">
         <div id="side-bar-content" class="col-2"></div>
         <div id="main-about" class="col-8">
-            <div id="lineOfInfo">
+            <div id="lineOfInfo" class="col-12">
                 <img src="img/comp.png" class="col-5" width="100%" alt="">
                 <div class="space col-1"></div>
                 <div class="col-6 info">
@@ -88,10 +110,62 @@
                 </div>
                    
             </div>
-           
+            <div id="lineOfInfo" class="col-12">
+                <div class="col-6 info">
+                    <p class="col-12">
+                        <span class="h4-head">UNDERSTANDING MY PASSION</span>
+                        Какие-то факты, из жизни и прочий никому неинтересный мусор, потому как эту рубрику никто не читает...
+                    </p>
+                    <span class="link col-12 right">
+                        <a href="#">SEE MY RESUME</a>
+                    </span>
+                </div>
+                <div class="space col-1"></div>
+               <iframe width="100%" src="https://www.youtube.com/watch?v=8UTcFJV1kpA" frameborder="0" class="col-5"></iframe>
+            </div>
         </div>
         <div id="side-bar-content" class="col-2"></div>
         
+    </div>
+    <div id="contact-me">
+        <div class="contact-me-side col-3"></div>
+        <div id="main-contact" class="col-6">
+            <div id="title-contact" class="col-12">
+                <h3>CONTACT ME TODAY</h3>
+                <p>
+                    Please feel free to reach out to me if you have any questions or comments about the services i offer. Also, you could always just send me a friendly hello
+                </p>
+            </div>
+            <form action="">
+                <div class="input-line">
+                    <div class="firstName col-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                    <div class="secondName col-6">
+                        <label for="secondName">Second Name</label>
+                        <input type="text" class="form-control" id="secondtName" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                </div>
+                <div class="input-line">
+                    <div class="email col-12">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="input-line">
+                    <div class="email col-12">
+                        <label for="exampleTextarea">Your Message</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+                    </div>
+                </div>     
+            </form>
+            <div class="buttonSend col-12">
+            <button class="sendMessage">SEND MESSAGE</button>
+            </div>
+            
+        </div>
+        <div class="contact-me-side col-3"></div>
     </div>
     <footer>
         
