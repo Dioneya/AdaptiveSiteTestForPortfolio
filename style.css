@@ -8,8 +8,8 @@
         background: url(img/backgroundHeader.png);
         background-repeat: no-repeat;
         background-size:cover;
+        float: left;
         background-position: center center;
-        position: static;
     }
 }
 
@@ -33,12 +33,13 @@ body{
 }
 
 header{
-        width: 100%;
-        min-height: 130vh;
-        background: url(img/backgroundHeader.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center center;
+    width: 100%;
+    min-height: 130vh;
+    background: url(img/backgroundHeader.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    float: left;
 }
 
 #nav{
@@ -154,8 +155,9 @@ header{
 }
 
 #sub-header{
-    box-shadow:  2px 8px 20px 0px rgba(50, 50, 50, 1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     width: 100%;
+    float: left;
 }
 
 #side-bar-content{
@@ -371,4 +373,112 @@ label{
     opacity: 0.8;
     background-color: transparent;
     border: 0;
+}
+
+footer{
+    min-height: 10vh;
+    width: 100%;
+    background: #333333;
+    float: left;
+}
+
+#footer-slide{
+    float: left;
+    width: 100%;
+    min-height: 10vh;
+}
+#main-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#mini-nav{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+#mini-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8vw; 
+    padding-left: 10%;
+    font-family: 'Raleway Regular', arial;
+    padding-top: 15%;
+    opacity: 0.8;
+}
+
+#mini-nav a:hover{
+    color: white;
+}
+#mini-about{
+    width: 20%;
+    margin-left: 10%;
+}
+
+#mini-about p{
+    color: white;
+    font-size: 0.8vw;
+    font-family: 'Raleway Regular', arial;
+    margin-top: 10%;
+    opacity: 0.8;
+}
+
+#follow{
+    width: 20%;
+    margin-left: 10%;
+}
+
+#follow h3{
+    font-size: 1vw;
+    color: white;
+    opacity: 0.8;
+    margin-top: 2%;
+    font-family: 'Raleway Regular', arial;
+}
+
+
+#social{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+}
+#social img{
+    width: 1.5vw;
+}
+#emailInfo{
+    width: 100%;
+    display: flex;
+    margin-top: 20%;
+}
+
+.emailInfo{
+    color: white;
+    opacity: 0.8;
+    font-size: 1vw;
+    font-family: 'Raleway Regular', arial;
+    padding-left: 20%;
+}
+
+#emailInfo img{
+    width: 2vw;
+    max-width: 20px;
+    max-height: 14px;
+}
+#telInfo img{
+    width: 2vw;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.telInfo{
+    color: white;
+    opacity: 0.8;
+    font-size: 1vw;
+    font-family: 'Raleway Regular', arial;
+    padding-left: 18%;
 }
