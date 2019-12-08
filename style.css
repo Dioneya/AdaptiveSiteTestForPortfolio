@@ -167,7 +167,7 @@ header{
 }
 
 #main-content-slider{
-    min-height: 200vh;
+    min-height: 150vh;
     float: left;
     width: 100%;
 }
@@ -175,7 +175,7 @@ header{
 #slider-content{
     float: left;
     width: 100%;
-    min-height: 200vh;
+    min-height: 150vh;
     background-color:#ebebeb;
 }
 
@@ -256,12 +256,15 @@ header{
     align-content: center;
     background-color: transparent;
     border: none;
+    border-bottom: 2px solid transparent;
     font-size: 0.8vw;
+    opacity: 0.5;
     font-family: 'Raleway Regular', arial;
 }
 
 .active{
     transition: 0;
+    opacity: 1;
     border-bottom: 2px solid black;
     font-family: 'Raleway Regular', arial;
     opacity: 1;
@@ -271,13 +274,34 @@ header{
     width: 100%;
     min-height:  40vh;
     background: gray;
+    margin-right: 2%;
+    
+}
+
+.no-active:hover{
+    border-bottom: 2px solid black;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.line-box{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+}
+
+
+.seeMyPortfolio{
+   margin-left: 42%; 
 }
 
 .slide{
     float: left;
-    position: absolute;
     opacity: 0;
 	z-index: 1;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .showing{
@@ -286,13 +310,9 @@ header{
 }
 
 #slides{
-	position: relative;
 	padding: 0px;
 	margin: 0px;
-}
-
-.slide:nth-of-type(2) .image-box{
-    background: green;
+    
 }
 
 #contact-me{
